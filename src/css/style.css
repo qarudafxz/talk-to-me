@@ -1,0 +1,283 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.bg-green {
+	background-color: white;
+}
+
+.fixed-buttons {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #ffffff;
+	/* You can change the background color */
+	box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+	/* Optional: Add a box shadow for visual effect */
+	z-index: 999;
+	/* Optional: Set a higher z-index if the buttons overlap with other elements */
+}
+
+.circle-container {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	overflow: hidden;
+	background-color: darkblue;
+
+	/* Set background color */
+}
+
+.circle-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.text-below {
+	position: absolute;
+	top: 75px;
+	left: 70px;
+	transform: translateX(-50%);
+	color: black;
+	text-align: left;
+	width: 100px;
+	font-weight: 500;
+	font-size: 12px;
+}
+
+.text {
+	position: absolute;
+	top: 420px;
+	left: 190px;
+	transform: translateX(-50%);
+	color: black;
+	text-align: center;
+	width: 1000px;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.text2 {
+	position: absolute;
+	top: 460px;
+	left: 190px;
+	transform: translateX(-50%);
+	color: black;
+	text-align: center;
+	width: 370px;
+	font-size: 15px;
+}
+
+.fixed-buttons {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index: 999;
+}
+
+.fixed-column {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+	z-index: 999;
+}
+
+/*Icons Journal*/
+.fixed-column img {
+	width: 40px;
+	height: 40px;
+	margin: 5 10px;
+}
+
+.quote-container {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.quote-container {
+	margin-top: 50px;
+	text-align: center;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: #f8d7da;
+	color: #721c24;
+}
+
+.quote-text {
+	font-size: 19px;
+}
+
+.quote-author {
+	margin-top: 20px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+footer {
+	background-color: white;
+	color: white;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+/*Home icons*/
+.img-fluid {
+	width: 40px;
+	height: 40px;
+}
+
+/*login /signup button*/
+.btn-light {
+	width: 100%;
+	height: 35px;
+}
+
+/*Home*/
+
+.container-fluid {
+	text-align: center;
+}
+
+.dashboard-icons-section {
+	justify-content: center;
+}
+
+.text,
+.text2 {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.col-md-4 {
+	text-align: center;
+}
+
+.row.bg-green {
+	justify-content: center;
+}
+
+/* messages */
+
+.message-sender {
+	margin-bottom: 5px;
+}
+
+.message-sender.text-right {
+	text-align: right;
+}
+
+.message-content.text-left {
+	text-align: left;
+}
+
+/* styles.css */
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding-top: 15px;
+}
+
+.chat {
+	background-color: #eed4d4;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.message {
+	margin-bottom: 15px;
+	padding: 10px;
+	border-radius: 8px;
+	margin-bottom: 20px;
+	text-align: right;
+	background-color: #dcf8c6;
+}
+
+.message.me {
+	text-align: left;
+	background-color: #ffffff;
+	color: #333;
+}
+
+footer {
+	background-color: #f5f5f5;
+	padding: 20px 0;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+.input-box {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+input[type="text"] {
+	width: calc(100% - 90px);
+	border-radius: 5px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	margin-right: 10px;
+}
+
+#send-button {
+	border-radius: 5px;
+	padding: 10px 20px;
+}
+
+/* Style for padding color of notes */
+#notesList .list-group-item {
+	padding: 10px;
+	/* Change this value as needed */
+	background-color: rgb(255, 255, 255);
+	/* Change this to the desired color */
+}
+
+/* Style for padding color of favorites */
+#favoritesList .list-group-item {
+	padding: 10px;
+	/* Change this value as needed */
+	background-color: #fee5e5;
+	/* Change this to the desired color */
+}
+
+/*Alert Notification */
+.alert {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.bot {
+	text-align: left;
+	background-color: #fee5e5;
+	color: #333;
+}
+
+.mt {
+	margin-top: 20px;
+	padding-bottom: 150px;
+}
+
+.scrollable-chat {
+	height: 100vh; /* Set the maximum height you desire */
+	overflow-y: auto;
+}

@@ -1,0 +1,11 @@
+{
+  "appId": "talktomeapp.com",
+  "appName": "Talk To Me App",
+  "bundledWebRuntime": false,
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  }
+}

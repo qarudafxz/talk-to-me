@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Talk To Me</title>
+    <meta name="viewport"
+        content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <script type="module"
+        src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.esm.js"></script>
+    <script nomodule
+        src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="./assets/imgs/giphy.gif" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script type="module" src="./js/auth/login.js"></script>
+    <script type="module" src="./js/main.js"></script>
+
+    <meta name="theme-color" content="#31d53d" />
+</head>
+
+<body style="background-image: url('assets/imgs/background.png');">
+
+    <!-- form -->
+
+    <div class="col text-center">
+        <br><br><br><br><br><br><br><br><br>
+        <h2 class="text-light fw-bold text-dark">Welcome!</h2>
+        <img src="assets/imgs/giphy.gif" alt="logo" height="100px" width="100px">
+
+        <!-- Alert Notification -->
+        <div class="alert alert-success d-none text-center" role="alert"></div>
+        <div class="alert alert-danger d-none text-center" role="alert"></div>
+
+
+        <form id="form_login" class="px-5 mx-5">
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" name="email" id="email" placeholder="email" required />
+                <label for="floatingInput">Email Address</label>
+            </div>
+            <!--Password field-->
+            <div class="form-floating mb-3">
+                <input type="password" class="form-control" name="password" id="password" placeholder="password"
+                    required />
+                <label for="floatingPassword">Password</label>
+            </div>
+            <div class="d-grid gap-2 text-light">
+                <a href="dashboard.html" class="link-offset-2 link-underline link-underline-opacity-0">
+                    <div class="btn btn-light text-primary-emphasis fw-bold fs-6" style="cursor: pointer;">
+                        <span style="color: rgb(21, 128, 215);">Login</span>
+                    </div>
+                </a>
+
+
+
+                <small class="text-dark">Don't have an account?
+                    <a href="signup.html"
+                        class="text-dark link-offset-2 link-offset-3-hover link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover">Create
+                        an account</a>
+                </small>
+            </div>
+
+            <div class="d-grid gap-2 text-light">
+                <a href="signup.html" class="link-offset-2 link-underline link-underline-opacity-0">
+                    <div class="btn btn-light text-primary-emphasis fw-bold fs-6" style="cursor: pointer;">
+                        <span style="color: rgb(21, 128, 215);">Sign Up</span>
+                    </div>
+                </a>
+            </div>
+
+
+        </form>
+
+
+    </div>
+    <!-- end of form -->
+
+
+
+
+    <script src="./js/capacitor-welcome.js" type="module"></script>
+</body>
+
+</html>

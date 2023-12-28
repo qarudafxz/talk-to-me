@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Talk To Me</title>
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.js"
+    ></script>
+
+    <link rel="icon" type="image/x-icon" href="./assets/imgs/giphy.gif" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script type="module" src="./js/main.js"></script>
+
+    <meta name="theme-color" content="#31d53d" />
+  </head>
+  <!--start-->
+
+  <body>
+    <body style="background-image: url('assets/imgs/background.png');"></body>
+    <div class="container">
+      <div>
+        <br />
+        <a href="home.html">
+          <img
+            src="assets/imgs/left.png"
+            alt="arrow"
+            height="33px"
+            width="33px"
+            style="position: fixed; left: 10px; top: 10px;"
+          />
+        </a>
+      </div>
+
+      <div class="chat mt-4 pt-4 container chat-container scrollable-chat">
+        <div class="message me">
+          <div class="message-content">Hi, how are you feeling today?</div>
+        </div>
+
+        <div class="message">
+          <div class="message-content">Hi, I'm not good. I'm drained</div>
+        </div>
+
+        <div class="message me">
+          <div class="message-content">What's draining your energy?</div>
+        </div>
+
+        <div class="message">
+          <div class="message-content">Debugging my code. I'm so stressed.</div>
+        </div>
+
+        <div class="message me">
+          <div class="message-content">Let me help you</div>
+        </div>
+      </div>
+      <div id="ai-responses" class="mt"></div>
+    </div>
+
+    <footer>
+      <div class="row">
+        <div class="col-12">
+          <div class="input-box d-flex align-items-center">
+            <input
+              type="text"
+              id="message-input"
+              class="form-control flex-grow-1"
+              placeholder="Type your message..."
+            />
+            <button id="send-button" class="btn btn-primary ml-3">
+              Send
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/ai/chat.js" type="module"></script>
+    <script src="./js/capacitor-welcome.js" type="module"></script>
+  </body>
+</html>
